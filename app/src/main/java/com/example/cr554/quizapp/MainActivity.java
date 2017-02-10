@@ -10,9 +10,14 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import java.sql.Time;
+import java.text.MessageFormat;
+import java.util.concurrent.TimeUnit;
+
 public class MainActivity extends AppCompatActivity {
 
     private int questionCounter =0;
+    private int correctCounter = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,11 +35,21 @@ public class MainActivity extends AppCompatActivity {
         final Button button = (Button) findViewById(R.id.submitButton);
         button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
+                RadioButton ans1 = (RadioButton) findViewById(R.id.answerOne);
+                if (ans1.isChecked()){
+                    //check if answer is correct
+                    correctCounter++;
+                }
                 if (questionCounter == fullQuiz.length -1){
                     setContentView(R.layout.results);
+                    String numberRight = Integer.toString(correctCounter);
+                    TextView count = (TextView) findViewById(R.id.numberCorrect);
+                    count.setText(numberRight);
+                    //if questions are done, bring to end stagecorrectAnswers.setText(toString(getCorrectCounter()));
                 }
                 else{
-                    //right/wrong
+                    //else bringup next question
+
                     questionCounter++;
                     quizPopulate(fullQuiz[questionCounter]);
                 }
@@ -56,4 +71,7 @@ public class MainActivity extends AppCompatActivity {
         quizAns3Wrong.setText(quiz.getAnswerWrong3());
     }
 
+    public int getCorrectCounter() {
+        return correctCounter;
+    }
 }
