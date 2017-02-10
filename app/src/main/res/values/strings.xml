@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">QuizApp</string>
-    <string name="Submit">Submit</string>
+    <string name="submit">Submit</string>
+    <string name="finish">The test is now finished! We did it fam</string>
 
     <!-- Question -->
     <string name="question_one">What is objectively the best fruit?</string>

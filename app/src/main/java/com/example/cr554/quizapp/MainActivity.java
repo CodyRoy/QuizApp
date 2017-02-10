@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         final Button button = (Button) findViewById(R.id.submitButton);
         button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
-                if (questionCounter == fullQuiz.length){
-                    //things
+                if (questionCounter == fullQuiz.length -1){
+                    setContentView(R.layout.results);
                 }
                 else{
                     //right/wrong
