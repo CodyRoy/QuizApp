@@ -7,9 +7,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="results"
+        android:id="@+id/numCorrectText"
         android:textSize="24sp"
-        android:textColor="@color/text"/>
+        android:textColor="@color/text"
+        android:text="@string/end"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:textColor="@color/text"
+        android:text="8"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/numCorrectText"
+        android:id="@+id/numberCorrect"/>
 
 
 </RelativeLayout>
