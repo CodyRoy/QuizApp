@@ -14,7 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="defualt" />
+        android:text="defualt"
+        android:id="@+id/question_text"/>
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
