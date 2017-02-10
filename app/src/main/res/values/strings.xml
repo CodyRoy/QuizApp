@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">QuizApp</string>
+    <string name="Submit">Submit</string>
+
+    <!-- Question -->
+    <string name="question_one">What is objectively the best fruit?</string>
+    <string name="question_two">Who is objectively the prettiest nintendo princess?</string>
+    <string name="question_three">which is your favorite answer?</string>
+
+    <!-- Answers -->
+    <string name="q1_ans1">Banana</string>
+    <string name="q1_ans2">Orange</string>
+    <string name="q1_ans3">Apple</string>
+
+    <string name="q2_ans1">Marth</string>
+    <string name="q2_ans2">Peach</string>
+    <string name="q2_ans3">The one from mario galaxy</string>
+
+    <string name="q3_ans1">this one</string>
+    <string name="q3_ans2">definitely that one</string>
+    <string name="q3_ans3">theres really only one answer here.</string>
 </resources>
